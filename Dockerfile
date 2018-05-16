@@ -14,8 +14,6 @@ RUN sdkmanager "build-tools;23.0.1"
 
 RUN sdkmanager "platforms;android-23"
 
-RUN sdkmanager "platforms;android-26" "build-tools;26.0.2"
-
 USER root
 
 RUN chown -R circleci:circleci /home/circleci/.npm
